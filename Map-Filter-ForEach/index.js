@@ -5,10 +5,11 @@ nums.forEach((num) =>{
     console.log(num * 8);
 });
 
+console.log("-------------------------------- :: --------------- :: ---")
 
 const newArr = nums.forEach((num) => {
-  // console.log(num * 8);
-  return num * 2;
+  console.log(num * 8);
+//   return num * 2;
 });
 
 
