@@ -44,3 +44,19 @@ tesla.drive();
 */
 
 
+
+function User(name){
+    this.name = name;
+}
+
+User.prototype.sayHii = function (){
+    console.log("Hii " + this.name);
+}
+
+
+const u1 = new User("Bhavik");
+u1.sayHii();
+
+
+
+
