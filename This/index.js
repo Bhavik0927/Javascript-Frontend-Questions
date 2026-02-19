@@ -142,10 +142,6 @@ user1.greet();
 
 
 
-<Hello></Hello>
-
-
-
 
 
 
