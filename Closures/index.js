@@ -45,6 +45,7 @@ counter.increment();
 counter.decrement()
 
 
+/*
 
 function attach() {
     const big_Data = new Array(100000).fill('data');
@@ -54,7 +55,7 @@ function attach() {
     })
 }
 
-attach();
+// attach();
 
 
 document.getElementById('clo_btn').addEventListener('click', varFunction);
@@ -76,3 +77,43 @@ function varIFEE_function(){
         })(i)
     }
 }
+
+*/
+
+
+
+// Memory Leak Scenario
+function startLeaking(){
+    let heavyData = new Array(100000).fill("Memory Leak");
+
+    const intervalId = setInterval(() =>{
+        console.log("Still running... Data size: ", heavyData.length);
+    },1000)
+
+    console.log("Leak started. Even if this function ends")
+}
+
+// startLeaking()
+
+
+// Prevent It
+
+let intervalId = null;
+
+function startSafe(){
+    let heavyData = new Array(1000000).fill("Safe");
+
+    intervalId = setInterval(() =>{
+        console.log("Processing...")
+    }, 1000);
+}
+
+
+function stopSafe(){
+    clearInterval(intervalId);
+    intervalId = null;
+    console.log("Memory cleared...")
+}
+
+startSafe();
+stopSafe();
