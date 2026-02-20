@@ -30,3 +30,19 @@ const p3 = 30;
 
 Promise.myAll([p1,p2,p3]).then(console.log).catch(console.error);
 
+
+
+// Array.map();
+
+
+
+const arr = [12,4,45,6,777,23];
+
+arr.prototype.myMap = function(callback){
+    const result = [];
+
+    for(let i = 0; i< this.length; i++){
+        result.push(callback(this[i], i , this))
+    }
+    return result;
+}
