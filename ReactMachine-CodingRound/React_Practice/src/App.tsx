@@ -1,3 +1,5 @@
+import Optimize from "./Controlled/Optimize";
+import UsingMemo from "./Controlled/UsingMemo";
 import UseRef from "./Hooks/UseRef";
 import UnControlled from "./unControlled/UnControlled";
 
@@ -5,7 +7,9 @@ const App = () => {
   return (
     <div>
       {/* <UseRef /> */}
-      <UnControlled />
+      {/* <UnControlled /> */}
+      {/* <Optimize /> */}
+      <UsingMemo />
     </div>
   )
 }
