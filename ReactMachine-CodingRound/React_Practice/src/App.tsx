@@ -1,5 +1,6 @@
 import Optimize from "./Controlled/Optimize";
 import UsingMemo from "./Controlled/UsingMemo";
+import IndexForm from "./HookForm/indexForm";
 import UseRef from "./Hooks/UseRef";
 import UnControlled from "./unControlled/UnControlled";
 
@@ -9,7 +10,8 @@ const App = () => {
       {/* <UseRef /> */}
       {/* <UnControlled /> */}
       {/* <Optimize /> */}
-      <UsingMemo />
+      {/* <UsingMemo /> */}
+    <IndexForm />
     </div>
   )
 }
