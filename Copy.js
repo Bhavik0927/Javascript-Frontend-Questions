@@ -6,12 +6,13 @@ const user1 = {
     }
 };
 
-const user2 = {...user1};
+const Copied_user2 = {...user1};
 
-user2.name="Ronnin";
+Copied_user2.name="Ronnin";
+Copied_user2.address.city = "Banglore";
 
-// console.log(user1);
-// console.log(user2);
+//  console.log("original user: ", user1);
+//  console.log("copied user: ",Copied_user2);
 
 
 // const obj = {
@@ -36,6 +37,7 @@ const member1 = {
 const member2 = structuredClone(member1);
 
 member2.address.city = "Pune";
+member2.name = "Holly"
 
 console.log(member1);
 console.log(member2);
