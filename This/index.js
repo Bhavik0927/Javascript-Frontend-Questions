@@ -140,8 +140,68 @@ user1.greet();
 
 */
 
+/*
+
+console.log(window)
+
+function show(){
+    console.log(this === window)
+    // console.log(this);
+}
+
+show();
+
+*/
+
+/*
 
 
 
+const user = {
+  name: "Alex",
+  greet() {
+    console.log(`Hi, I'm ${this.name}`);
+  }
+};
+
+user.greet(); 
+
+*/
+
+/* 
+
+const bot = {
+    phrase: "Beep Boop",
+    speak(){ console.log(this.phrase)}
+}
+
+setTimeout(bot.speak.bind(bot), 1000);
+
+*/
 
 
+/*
+
+const user = {
+    name:"Bhavik",
+    greet(){
+        console.log("Hello", this.name);
+    }
+}
+
+setTimeout(user.greet.bind(user), 1000);
+
+*/
+
+
+var name = "Ronnin";
+const user = {
+    name: "Bhavik",
+    greet(){
+        setTimeout(function (){
+            console.log(this.name);
+        },1000)
+    }
+}
+
+user.greet();  
