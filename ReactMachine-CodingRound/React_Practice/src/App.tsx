@@ -3,7 +3,7 @@ import UsingMemo from "./Controlled/UsingMemo";
 import IndexForm from "./HookForm/indexForm";
 import UseRef from "./Hooks/UseRef";
 import UnControlled from "./unControlled/UnControlled";
-
+import Phase1 from "./RenderingPhase/Phase1";
 const App = () => {
   return (
     <div>
@@ -11,7 +11,8 @@ const App = () => {
       {/* <UnControlled /> */}
       {/* <Optimize /> */}
       {/* <UsingMemo /> */}
-    <IndexForm />
+    {/* <IndexForm /> */}
+    <Phase1 />
     </div>
   )
 }
