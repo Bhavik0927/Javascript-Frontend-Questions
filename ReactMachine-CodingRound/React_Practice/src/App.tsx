@@ -4,6 +4,7 @@ import IndexForm from "./HookForm/indexForm";
 import UseRef from "./Hooks/UseRef";
 import UnControlled from "./unControlled/UnControlled";
 import Phase1 from "./RenderingPhase/Phase1";
+import UseEffect from "./UseEffect/UseEffect";
 const App = () => {
   return (
     <div>
@@ -12,7 +13,8 @@ const App = () => {
       {/* <Optimize /> */}
       {/* <UsingMemo /> */}
     {/* <IndexForm /> */}
-    <Phase1 />
+    {/* <Phase1 /> */}
+    {/* <UseEffect /> */}
     </div>
   )
 }
