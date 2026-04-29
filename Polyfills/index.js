@@ -46,3 +46,27 @@ arr.prototype.myMap = function(callback){
     }
     return result;
 }
+
+
+
+// filter Polyfills
+
+if(!Array.prototype.myFilter){
+    Array.prototype.myFilter = function(cb, thisArg){
+        if(typeof cb !== "function"){
+            throw new TypeError("Callback is not present");
+        }
+
+        let result = [];
+        for(let i = 0; i< this.length; i++){
+
+            if(i in this){
+                if(cb.call(thisArg, this[i], i, this))
+                result.push(this[i]);
+            }
+            
+        }
+
+        return result;
+    }
+}
