@@ -5,6 +5,7 @@ import UseRef from "./Hooks/UseRef";
 import UnControlled from "./unControlled/UnControlled";
 import Phase1 from "./RenderingPhase/Phase1";
 import UseEffect from "./UseEffect/UseEffect";
+import Main from "./LiftState/Main";
 const App = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const App = () => {
     {/* <IndexForm /> */}
     {/* <Phase1 /> */}
     {/* <UseEffect /> */}
+    <Main />
     </div>
   )
 }
